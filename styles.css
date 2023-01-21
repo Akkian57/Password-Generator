@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+    background-image: url("./background-img.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-size: 100% 100%;
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100vh;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    margin: 10px 0 20px;
+	text-align: center;
+    letter-spacing: 2px;
+}
+
+#container{
+    background-color: rgb(44, 44, 44);
+    padding: 20px;
+	width: 350px;
+    max-width: 100%;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+    border: 0.5px solid;
+}
+
+#fa{
+    display: flex;
+    align-self: flex-end;
+    color: rgb(2, 2, 2);
+}
+
+#result-container {
+	background-color: white;
+	display: flex;
+    flex-direction: row;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 28px;
+    border: 1px solid;
+}
+
+#result{
+    width: 80%;
+    font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.rules-container{
+    color: white;
+    display: flex;
+	justify-content: flex-start;
+    flex-direction: column;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px 12px 0px;
+}
+
+input[type=checkbox]{
+    margin-right: 0;
+    background-color: rgb(0, 0, 0);
+    align-self: center;
+    height: 70%;
+    
+}
+#length{
+    margin-right: 10px;
+}
+#showRange{
+    height: 25%;
+    width: 40px;
+    text-align: right;
+}
+input[type=checkbox]:hover{
+    margin-right: 0;
+    align-self: center;
+    height: 70%;
+}
+
+.passLength{
+    height: 2px;
+    background: transparent;
+    align-self: center;
+}
+
+.btn{
+    background: transparent;
+    width: 20%;
+    border: none;
+}
+
+.setting{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 1px;
+}
+
+#btn-generate-password{
+    background-color: rgb(44, 44, 44, 0.9);
+    margin: 10px 0 20px;
+    height: 40px;
+    width: 100%;
+    font-size: 17px;
+	letter-spacing: 1px;
+    border: 1px solid;
+    border-color: blue;
+    color: white;
+}
+
+#btn-generate-password:hover{
+    background-color: rgb(44, 44, 44, 1);
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    font-size: 17.5px;
+	letter-spacing: 1px;
+    border: 1px solid;
+    border-color: blue;
+    box-shadow: 0px 2px 10px blue;
+}
+
+label{
+    width: 100%;
+    display: block;
+}
