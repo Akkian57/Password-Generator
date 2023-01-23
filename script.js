@@ -1,10 +1,11 @@
-
+const numbers = "0123456789";
 const spacialSybmols = "~!@#$%^&*"
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 
 function randomNumber(){
-    return Math.floor(Math.random() * 10);
+    return numbers[Math.floor(Math.random() * 10)];
+    // return Math.floor(Math.random() * 10);
 }
 
 function randomSymbol(){
@@ -28,9 +29,8 @@ const symbolsInput = document.getElementById("symbols");
 const finalPassword = document.getElementById("result");
 const showRange = document.getElementById("showRange");
 showRange.innerText = passLength.value;
-const password = "";
 
-
+//Copy Generated Password
 function copyPassword(){
     const textarea = document.createElement("textarea");
     const password = finalPassword.innerText;
@@ -44,10 +44,11 @@ function copyPassword(){
     textarea.select();
     document.execCommand("copy");
     textarea.remove();
-    alert("Password Copied!");
+    alert("Password Coppied!");
 }
 
-
+//Generate Password
+const password = "";
 function generatePassword(password) {
     console.log(password);
     if (upperInput.checked) {
@@ -64,8 +65,9 @@ function generatePassword(password) {
     }
     if (password.length <= Number(passLength.value)) {
         return generatePassword(password);
+        
     }
-    console.log(password);
+    
     finalPassword.innerText = password.slice(1, Number(passLength.value) + 1);
 }
 // generatePassword(password);
