@@ -22,17 +22,21 @@
         <div class="rules-container">
             <div class="setting">
                 <label for="length">Password Length</label>
-                <input type="range" id="length" class="passLength" min="8" max="20" onchange="showVal()">
+                <!-- <input type="range" id="length" class="passLength" min="8" max="20" onchange="showVal()">-->
                 <div id="showRange"></div>
             </div>
 
             <div class="setting">
-                <label for="upperCase">Include Upper Case</label>
+                <input type="range" id="length" class="passLength" min="8" max="20" onchange="showVal()">
+            </div>
+
+            <div class="setting">
+                <label for="upperCase">Include Uppercase Letters</label>
                 <input id="upperCase" class="upperCase" type="checkbox" checked>
             </div>
 
             <div class="setting">
-                <label for="lowerCase">Include Lower Case</label>
+                <label for="lowerCase">Include Lowercase Letters</label>
                 <input id="lowerCase" class="lowerCase" type="checkbox" checked>
             </div>
 
