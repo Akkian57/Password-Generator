@@ -72,9 +72,9 @@ input[type=checkbox]{
     height: 70%;
     
 }
-#length{
+/* #length{
     margin-right: 10px;
-}
+} */
 #showRange{
     height: 25%;
     width: 40px;
@@ -87,9 +87,10 @@ input[type=checkbox]:hover{
 }
 
 .passLength{
-    height: 2px;
+    height: 3px;
     background: transparent;
     align-self: center;
+    width: 100%;
 }
 
 .btn{
@@ -144,4 +145,20 @@ label{
 	position: relative;
 	font-size: 25px;
 	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 400px) {
+	.result-container {
+		font-size: 14px;
+	}
+}
+
+
+.result-container .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
 }
